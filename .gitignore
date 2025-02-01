@@ -340,3 +340,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,linux,node,sass,angular,firebase,vercel,remix+vercel,remix+netlify,remix+cloudflarepages
+.vscode/settings.json
