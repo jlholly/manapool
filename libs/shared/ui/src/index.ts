@@ -1,1 +1,1 @@
-export * from './lib/ui/logo/logo.component';
+export * from './lib/ui/components/logo/logo.component';
