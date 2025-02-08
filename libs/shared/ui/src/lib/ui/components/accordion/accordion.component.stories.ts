@@ -6,6 +6,13 @@ import { expect } from '@storybook/jest';
 const meta: Meta<AccordionComponent> = {
   component: AccordionComponent,
   title: 'Accordion',
+  parameters: {
+    docs: {
+      description: {
+        component: 'A vertically stacked set of collapsible panels, each containing a header and an associated content area. It allows users to view a summary or a condensed version of the content and then expand it to reveal detailed information.'
+      }
+    }
+  }
 };
 export default meta;
 type Story = StoryObj<AccordionComponent>;

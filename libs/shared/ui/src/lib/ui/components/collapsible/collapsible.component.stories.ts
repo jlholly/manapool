@@ -6,6 +6,13 @@ import { expect } from '@storybook/jest';
 const meta: Meta<CollapsibleComponent> = {
   component: CollapsibleComponent,
   title: 'Collapsible',
+  parameters: {
+    docs: {
+      description: {
+        component: 'An interactive component which expands/collapses a panel.'
+      }
+    }
+  }
 };
 export default meta;
 type Story = StoryObj<CollapsibleComponent>;

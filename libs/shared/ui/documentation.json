@@ -3545,7 +3545,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StorybookConfig",
-                "defaultValue": "{\n  stories: ['../**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],\n  addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Documentation',\n  }\n}"
+                "defaultValue": "{\n  stories: ['../src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],\n  addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Documentation',\n  }\n}"
             },
             {
                 "name": "Heading",
@@ -3601,16 +3601,6 @@
                 "name": "Heading",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/app-bar works!/gi)).toBeTruthy();\n  },\n}"
-            },
-            {
-                "name": "Heading",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "libs/shared/ui/src/lib/ui/components/alert-dialog/alert-dialog.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3621,11 +3611,11 @@
                 "name": "Heading",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/aspect-ratio works!/gi)).toBeTruthy();\n  },\n}"
+                "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/app-bar works!/gi)).toBeTruthy();\n  },\n}"
             },
             {
                 "name": "Heading",
@@ -3646,6 +3636,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/avatar works!/gi)).toBeTruthy();\n  },\n}"
+            },
+            {
+                "name": "Heading",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/aspect-ratio works!/gi)).toBeTruthy();\n  },\n}"
             },
             {
                 "name": "Heading",
@@ -4371,16 +4371,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<AppBarComponent>",
-                "defaultValue": "{\n  component: AppBarComponent,\n  title: 'App Bar',\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "libs/shared/ui/src/lib/ui/components/alert-dialog/alert-dialog.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -4391,11 +4381,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<AspectRatioComponent>",
-                "defaultValue": "{\n  component: AspectRatioComponent,\n  title: 'Aspect Ratio',\n}"
+                "type": "Meta<AppBarComponent>",
+                "defaultValue": "{\n  component: AppBarComponent,\n  title: 'App Bar',\n}"
             },
             {
                 "name": "meta",
@@ -4416,6 +4406,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<AvatarComponent>",
                 "defaultValue": "{\n  component: AvatarComponent,\n  title: 'Avatar',\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<AspectRatioComponent>",
+                "defaultValue": "{\n  component: AspectRatioComponent,\n  title: 'Aspect Ratio',\n}"
             },
             {
                 "name": "meta",
@@ -5141,16 +5141,6 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {},\n}"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "libs/shared/ui/src/lib/ui/components/alert-dialog/alert-dialog.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -5161,7 +5151,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -5182,6 +5172,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "libs/shared/ui/src/lib/ui/components/avatar/avatar.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {},\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -5919,17 +5919,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<AppBarComponent>",
-                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 183
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<AlertDialogComponent>",
                 "file": "libs/shared/ui/src/lib/ui/components/alert-dialog/alert-dialog.component.stories.ts",
                 "deprecated": false,
@@ -5941,8 +5930,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<AspectRatioComponent>",
-                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                "rawtype": "StoryObj<AppBarComponent>",
+                "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -5965,6 +5954,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<AvatarComponent>",
                 "file": "libs/shared/ui/src/lib/ui/components/avatar/avatar.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<AspectRatioComponent>",
+                "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -6719,7 +6719,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StorybookConfig",
-                    "defaultValue": "{\n  stories: ['../**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],\n  addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Documentation',\n  }\n}"
+                    "defaultValue": "{\n  stories: ['../src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],\n  addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Documentation',\n  }\n}"
                 }
             ],
             "libs/shared/ui/src/lib/ui/components/accordion/accordion.component.stories.ts": [
@@ -6882,38 +6882,6 @@
                     "defaultValue": "{\n  args: {},\n}"
                 }
             ],
-            "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts": [
-                {
-                    "name": "Heading",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/app-bar works!/gi)).toBeTruthy();\n  },\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<AppBarComponent>",
-                    "defaultValue": "{\n  component: AppBarComponent,\n  title: 'App Bar',\n}"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {},\n}"
-                }
-            ],
             "libs/shared/ui/src/lib/ui/components/alert-dialog/alert-dialog.component.stories.ts": [
                 {
                     "name": "Heading",
@@ -6946,32 +6914,32 @@
                     "defaultValue": "{\n  args: {},\n}"
                 }
             ],
-            "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts": [
+            "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts": [
                 {
                     "name": "Heading",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/aspect-ratio works!/gi)).toBeTruthy();\n  },\n}"
+                    "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/app-bar works!/gi)).toBeTruthy();\n  },\n}"
                 },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<AspectRatioComponent>",
-                    "defaultValue": "{\n  component: AspectRatioComponent,\n  title: 'Aspect Ratio',\n}"
+                    "type": "Meta<AppBarComponent>",
+                    "defaultValue": "{\n  component: AppBarComponent,\n  title: 'App Bar',\n}"
                 },
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -7036,6 +7004,38 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "libs/shared/ui/src/lib/ui/components/avatar/avatar.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {},\n}"
+                }
+            ],
+            "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts": [
+                {
+                    "name": "Heading",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {},\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    expect(canvas.getByText(/aspect-ratio works!/gi)).toBeTruthy();\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<AspectRatioComponent>",
+                    "defaultValue": "{\n  component: AspectRatioComponent,\n  title: 'Aspect Ratio',\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -9255,19 +9255,6 @@
                     "kind": 183
                 }
             ],
-            "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<AppBarComponent>",
-                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "libs/shared/ui/src/lib/ui/components/alert-dialog/alert-dialog.component.stories.ts": [
                 {
                     "name": "Story",
@@ -9281,13 +9268,13 @@
                     "kind": 183
                 }
             ],
-            "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts": [
+            "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<AspectRatioComponent>",
-                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
+                    "rawtype": "StoryObj<AppBarComponent>",
+                    "file": "libs/shared/ui/src/lib/ui/components/app-bar/app-bar.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -9314,6 +9301,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<AvatarComponent>",
                     "file": "libs/shared/ui/src/lib/ui/components/avatar/avatar.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<AspectRatioComponent>",
+                    "file": "libs/shared/ui/src/lib/ui/components/aspect-ratio/aspect-ratio.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
