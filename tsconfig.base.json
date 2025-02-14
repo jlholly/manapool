@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@manapool/shell": ["libs/shell/src/index.ts"],
       "@manapool/ui": ["libs/shared/ui/src/index.ts"],
       "@manapool/util": ["libs/shared/utils/src/index.ts"]
     }
